@@ -5,7 +5,9 @@ notebooks for creating composite plots for MHW events: number of events, duratio
 these are all the run needed for composite plots (made by ECCOv4r4_load_mat_files_and_create_maps_DAILY.ipynb):
 
 ########### OISST MONTHLY - DONE
+
 1993-2016 OISST monthly SST - DONE
+
 case_sel = get_dict_4_case_of_interest(tag_case = 'OISST MONTHLY 1993-2016 plot years 1993-2016')
 
 2004-2016 OISST monthly SST - DONE
