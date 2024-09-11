@@ -1,0 +1,42 @@
+clear all
+close all
+
+% addpath_matlab_code     = '/Users/jacoposala/Downloads/MHWs_code_DG_JS/';
+% output_dir              = '/Users/jacoposala/Downloads/MHWs_data_ouput_Aug16/';
+addpath_matlab_code     = '/projects/jasa1084/NASA_project/MHWs_RUN_August2024/code_Aug18/';
+output_dir              = '/projects/jasa1084/NASA_project/MHWs_RUN_August2024/outputs_Aug18/';
+
+% we first create all the input params we need and then run the code with
+% those
+
+list_cases = {...
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% OISST DAILY -
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% OISST DAILY, 1992:2017, tstep_gap = 0
+set_params_NASAPO_2020_MHWs_OISST_daily(addpath_matlab_code, ...
+0, 1992:2017, '','sst.day.mean.', ...
+'/scratch/alpine/jasa1084/inputs_MHW_project_blanca/oisst/', output_dir), ...
+% OISST DAILY, 1992:2017, tstep_gap = 2
+set_params_NASAPO_2020_MHWs_OISST_daily(addpath_matlab_code, ...
+2, 1992:2017, '','sst.day.mean.', ...
+'/scratch/alpine/jasa1084/inputs_MHW_project_blanca/oisst/', output_dir), ...
+};
+
+
+
+for i_list_cases=1:length(list_cases)
+    clearvars -except list_cases i_list_cases ...
+        addpath_matlab_code output_dir
+    % 
+    tic;
+    params = list_cases{i_list_cases};
+    disp(['-------------------------> ' params.fig_path])
+    NASAPO_2020_MHWs_detect_and_info_main(params);
+    disp('--------> total time for this run :')
+    toc;
+    close all
+end
+
