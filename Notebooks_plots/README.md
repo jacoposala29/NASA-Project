@@ -4,9 +4,9 @@ notebooks for creating composite plots for MHW events: number of events, duratio
 
 these are all the run needed for composite plots (made by ECCOv4r4_load_mat_files_and_create_maps_DAILY.ipynb):
 
-########### OISST MONTHLY - DONE
+## OISST MONTHLY - DONE
 
-1993-2016 OISST monthly SST - DONE
+### 1993-2016 OISST monthly SST - DONE
 
 case_sel = get_dict_4_case_of_interest(tag_case = 'OISST MONTHLY 1993-2016 plot years 1993-2016')
 
@@ -19,7 +19,7 @@ case_sel = get_dict_4_case_of_interest(tag_case = 'OISST MONTHLY 2004-2016 plot 
 case_sel = get_dict_4_case_of_interest(tag_case = 'OISST MONTHLY 1992-2017 plot years 1992-2017')
 
 
-########### ECCO MONTHLY - DONE
+## ECCO MONTHLY - DONE
 
 1993-2016 ECCO monthly k0-k5 - DONE
 
@@ -51,7 +51,7 @@ case_sel = get_dict_4_case_of_interest(tag_case = 'ECCO MONTHLY zlev01 2004-2016
 case_sel = get_dict_4_case_of_interest(tag_case = 'ECCO MONTHLY zlev01 1992-2017 plot years 1992-2017')
 
 
-########### ARGO MONTHLY - DONE
+## ARGO MONTHLY - DONE
 
 2004-2016 Argo monthly k0-k5 - DONE
 
@@ -63,7 +63,7 @@ case_sel = get_dict_4_case_of_interest(tag_case = 'ARGO MONTHLY OHC 2004-2016 pl
 case_sel = get_dict_4_case_of_interest(tag_case = 'ARGO MONTHLY OHC 2004-2017 plot years 2004-2017')
 
 
-########### OISST - DAILY gap 0 and gap 2 - DONE
+## OISST - DAILY gap 0 and gap 2 - DONE
 
 1992-2017 OISST daily k0 (5+) gap 0 - DONE 
 
@@ -95,7 +95,7 @@ case_sel = get_dict_4_case_of_interest(tag_case = 'OISST DAILY k0 1992-2017 5-30
 case_sel = get_dict_4_case_of_interest(tag_case = 'OISST DAILY k0 1992-2017 30+days plot years 1992-2017 gap 2')
 
 
-########### ECCO DAILY k0 - gap 0 and gap 2 - DONE
+## ECCO DAILY k0 - gap 0 and gap 2 - DONE
 
 1992-2017 ECCO daily k0 (5+) gap 0 -  DONE
 
@@ -127,7 +127,7 @@ case_sel = get_dict_4_case_of_interest(tag_case = 'ECCO DAILY zlev00 1992-2017 5
 case_sel = get_dict_4_case_of_interest(tag_case = 'ECCO DAILY zlev00 1992-2017 30+days plot years 1992-2017 gap 2')
 
 
-########### ECCO DAILY OHC k0-k5 - gap 0 and gap 2 - 
+## ECCO DAILY OHC k0-k5 - gap 0 and gap 2 - 
 
 1992-2017 ECCO daily OHC k0-k5 (5+) gap 0 -  DONE
 
