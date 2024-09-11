@@ -1,0 +1,2 @@
+# jupyter notebooks 
+notebooks for creating composite plots for MHW events: number of events, duration, intensity, heat budget terms composites, first/second/third contributor, onset/decline contributors. Line plots for horizontal average in regions
